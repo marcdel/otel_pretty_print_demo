@@ -7,11 +7,11 @@
 # General application configuration
 import Config
 
-config :demo,
+config :OtelPrettyPrintDemo,
   ecto_repos: [Demo.Repo]
 
 # Configures the endpoint
-config :demo, DemoWeb.Endpoint,
+config :OtelPrettyPrintDemo, DemoWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [
     formats: [html: DemoWeb.ErrorHTML, json: DemoWeb.ErrorJSON],
@@ -27,7 +27,7 @@ config :demo, DemoWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :demo, Demo.Mailer, adapter: Swoosh.Adapters.Local
+config :OtelPrettyPrintDemo, Demo.Mailer, adapter: Swoosh.Adapters.Local
 
 # Configure esbuild (the version is required)
 config :esbuild,
